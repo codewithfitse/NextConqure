@@ -1,13 +1,11 @@
 import React from "react";
-import { Landing } from "./pages/Landing";
-import LiveChat from "./components/LiveChat";
+import Home from './pages/Home'
 
 // satrt here
 const App = () => {
   return (
     <>
-      <LiveChat />
-      <Landing />
+      <Home />
     </>
   );
 };
