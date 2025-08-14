@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import useLanguage from "../pages/useLanguage";
+//import useLanguage from "../pages/useLanguage";
 
 const Footer = () => {
   const { t } = useLanguage();

@@ -1,0 +1,23 @@
+{
+  "name": "conquian",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Multiplayer Conquian game (monorepo)",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
+    "build": "npm run build --workspace=client && npm run build --workspace=server",
+    "test": "npm run test --workspace=server && npm run test --workspace=client",
+    "lint": "eslint \"client/**/*.{js,jsx}\" \"server/**/*.js\"",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "prettier": "^3.3.3"
+  }
+}
+
+

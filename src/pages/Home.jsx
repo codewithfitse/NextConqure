@@ -4,12 +4,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import SkeletonImage from "../components/Skeleton";
-import useLanguage from "./useLanguage";
+//import useLanguage from "./useLanguage";
 const LiveChat = lazy(() => import("../components/LiveChat"));
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const { t } = useLanguage();
+  //const { t } = useLanguage();
 
   useEffect(() => {
     // Simulate loading for 2 seconds
@@ -32,10 +32,10 @@ const Home = () => {
               <span className="text-[40px] lg:text-[60px] text-accent font-bold font-serif">
                 Time
               </span>{" "}
-              {t("hero_title")}
-            </h1>
+              {/* {t("hero_title")} */}
+            </h1> 
             <p className="text-[20px]/7 lg:text-[30px]/10 my-3 lg:my-6">
-              {t("hero_subtitle")}
+              {/* {t("hero_subtitle")} */}
             </p>
             <div className="flex  mt-5 lg:mt-10 space-x-2.5">
               <Link to={"/Contact"}>
